@@ -1,0 +1,42 @@
+Zadanie: 
+ + Chcemy symulować ruch drogowy.
+Problemy: 
+ + Jak opisać pojedyńczego uczestnika ruchu drogowego?
+    + Jaka klasa nadrzędna?
+    + Lista możliwych uczestników
+    + Ograniczenia dla konkretnych uczestników
+ + Na co składa się droga?
+    + Lista składowych drogi
+ + Jak opisać zasady ruchu drogowego?
+ + Czym są skrzyżowania? Jak sobie z nimi poradzić?
+ + W jaki sposób opisać infrastrukturę sieci komunikacyjnej?
+ + Jak narzucać restrykcje na uczestników ruchu drogowego
+   wynikające z lokalnego stanu infrastuktury i panujących zasad?
+ + Wprowadzamy symulację (czas)?
+
+Na drogę składają się:
+ + Elementy drogi:
+    + Pobocze
+    + Chodnik
+    + Ścieżka rowerowa
+    + Torowisko
+    + Pas ruchu 1, 2...
+ + Lokalne zasady
+
+Lista uczestników ruchu drogowego:
+ ( będziemy klasyfikować po przynależności do fragmentów drogi )
+ + Piesi
+    ( fragment drogi: chodnik )
+ + Kierowcy pojazdów niezmotoryzowanych:
+    ( fragemnt drogi: ścieżka rowerowa )
+    + Rowerzyści
+    + Rolkarze
+    + Skateboard'ziści
+ + Kierowcy pojazdów zmotoryzowanych
+    ( fragment drogi: jezdnia )
+
+Założenia:
+ + Zmiana między pasami jest natychmiastowa
+ + Brak symulowania upływu czasu
+ + Brak kolizji między uczestnikami ruchu
+ + Uczestnik ruchu ma przyporządkowaną drogę, nie na odwrót
